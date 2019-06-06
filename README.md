@@ -1,2 +1,2 @@
-# portafolio
-informacion de contacto
+# Portafolio
+Información personal
