@@ -1,0 +1,115 @@
+
+
+  #sidebar{
+    /* background-color: #091a34; */
+    /* height: 600px; */
+    min-height:100vh!important;
+  }
+  #sidebar li>a:hover:not(.active) {
+    background-color: rebeccapurple;
+    color: white;
+}
+#sidebar li>a.active{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+
+a {
+    
+    color: #212529;
+}
+.hide-nav{
+    display: none;
+}
+
+
+  /*
+   * Off Canvas sidebar at medium breakpoint
+   * --------------------------------------------------
+   */
+  @media screen and (max-width: 768px) {
+  
+    .row-offcanvas {
+      position: relative;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+  
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -33%;
+      
+    }
+  
+    .row-offcanvas-left.active {
+      left: 33%;
+      margin-left: -10px;
+    }
+  
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 33%;
+      height: 100%;
+      
+    }
+    .hide-nav{
+        display: inline;
+    }
+    
+  }
+  
+  /*
+   * Off Canvas wider at sm breakpoint
+   * --------------------------------------------------
+   */
+  @media screen and (max-width: 550px) {
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -48%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 50%;
+      margin-left: -5%;
+    }
+    .row-offcanvas-left.active li>img{
+        max-width:100px !important;
+    }
+    .sidebar-offcanvas {
+      width: 48%;
+     
+
+    }
+    .hide-nav{
+        display: inline;
+    }
+  }
+  @media screen and (max-width: 370px) {
+    
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -75%;
+    }
+  
+    .row-offcanvas-left.active {
+        left: 70%;
+
+        margin-left: 0%;
+      }
+   
+      .sidebar-offcanvas {
+        width: 75%;
+       
+        z-index: 1;
+  
+      }
+      .hide-nav{
+        display: inline;
+    }
+    
+  }
+  
+  

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,67 +7,51 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/my_style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <title>Portafolio</title>
+    <title>Prueba</title>
   </head>
-  <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
-    <nav class="navbar navbar-dark bg-danger fixed-top menu">
-        <button class="navbar-toggler" type="button"  data-toggle="collapse"
-        data-target="#Navbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <!-- Navbar content -->
-          <div class="collapse navbar-collapse"  id="Navbar">
+  <body data-spy="scroll" data-target=".nav" data-offset="2">
+   
+        <div class="hide-nav">
+
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-danger mb-3">
+                <div class="flex-row d-flex">
+                    <button type="button" class="navbar-toggler mr-2 " data-toggle="offcanvas" 
+                    title="Toggle responsive left sidebar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
             
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#intro"><h5>intro</h5></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#estudios"><h5>Estudios</h5></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servicios"> <h5>Servicios</h5></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#skills"><h5>Skills</h5></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#contacto"><h5>Contactamé</h5></a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-  <div class="container-fluid">
-     
-     <div class="container-fluid pl-0">
-      <div class="flex-xl-nowrap row">
-        <div class="col-12 col-md-4 col-xl-3 pl-5 pt-4 bg-danger sidebar">
-          <div class="list-group list-group-flush pos">
-              
-            <!-- <button><i class="fas fa-bars"></i></button> -->
-            <div class="container py-3">
-              <img class="img-thumbnail rounded-circle" 
-              style='max-width:170px' src="assets/img/perfil2.jpeg">
-              <br>
-            </div>
-            <h3>Rainer Romero</h3>
-             
-              <hr>
-             <nav id="myScrollspy" class="navbar bg-danger">
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
+            </nav>
+        </div>
+    
+    <div class="container-fluid" id="main">
+        <!--  sidebar  -->
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-md-3 col-lg-3 col-xl-2 sidebar-offcanvas py-4 bg-danger" id="sidebar" role="navigation">
+                
+                <ul id="myScrollspy" class="nav flex-column sticky-top pl-0 pt-3 mt-3">
+                    <li class="nav-item text-center"> 
+                        
+                            <img class="img-thumbnail rounded-circle p-1" 
+                            style='max-width:150px;' 
+                            src="assets/img/perfil2.jpeg">
                       
-                      <a class="nav-link active" href="#intro"><h5>Información</h5></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item text-center text-white px-2"><h4><b>RAINER ROMERO</b></h4></li>
+        
+                    <li class="nav-item">                      
+                    <a class="nav-link active" href="#intro"><h5>Información</h5></a>
                     </li>
                     <li class="nav-item">
 
-                      <a class="nav-link" href="#estudios"><h5>Estudios</h5></a>
+                    <a class="nav-link" href="#estudios"><h5>Estudios</h5></a>
                     </li>
                     <li class="nav-item">
 
-                      <a class="nav-link" href="#servicios"><h5>Servicios</h5></a>
+                    <a class="nav-link" href="#servicios"><h5>Servicios</h5></a>
                     </li>
                     <li class="nav-item">
 
@@ -78,183 +62,219 @@
 
                         <a class="nav-link" href="#contacto"><h5>Contactamé</h5></a>
                     </li>
-                </ul>
-
-             </nav>
-          </div>
-        </div>
-        
-        <div class="col-12 col-md-8 col-xl-9 py-md-3" >              
-          <div class="jumbotron bg-light p-5 mt-4" id="intro">
-              <h1 class="display-6">  Soy<span class="text-danger"> RAINER ROMERO</span> , Ingeniero electrónico.</h1>
-              <h5 class="font-italic my-4">Barranquilla – Colombia. +57 (301)537-1041. <a class="text-danger" href="mailto:rainerr@uninorte.edu.co">rainerr@uninorte.edu.co</a>  </h5>
-              <hr class="my-5">
-              <p class="lead">
-                Ingeniero Electrónico, con formación en programación, diseño e implementación de sistemas electrónicos,
-                con  habilidades para realizar proyectos enfocados a la ingeniería electrónica en general. 
-                Ampliamente entrenamiento en lenguajes de programación de bajo y alto nivel. Con conocimientos en desarrollo y diseño web. 
-                Alta experiencia en el desarrollo solución de problemas, con facilidad de trabajar en equipo, con sentido de creatividad e ingenio, 
-                con foque al logro. Soy una persona responsable, amable, alegre, colaboradora y con muchos deseos de aprender.</p>
-              
-              </p>
-              <hr class="my-4">
-                <a type="button" class="btn btn-info m-3" href="https://www.linkedin.com/in/rainer-romero-01b089117"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a type="button" class="btn btn-dark rounded-circle m-3" href="https://github.com/rainerr19/"><i class="fab fa-github fa-2x"></i></a>
-                <a type="button" class="btn btn-danger m-3" href="https://www.instagram.com/rainerr19/"><i class="fab fa-instagram fa-2x"></i></a>
-                <a type="button" class="btn btn-primary rounded-circle m-3" href="https://twitter.com/rainerr019"><i class="fab fa-twitter fa-2x"></i></a>
-          </div>
-          <div class="jumbotron bg-light p-4" id="estudios">
-            <h1 class="display-6"><i class="fas fa-graduation-cap"></i> Estudios </h1>
-            <hr class="my-4">
-            
-            <h1 class="lead"><b>Ingeniería Electrónica, <a class="text-danger" href="https://www.uninorte.edu.co/">Universidad del Norte</a> </b></h1>
-              <ul>
-                  <i class="fas fa-certificate"></i>	Título profesional en Ingeniería Electrónica <br>
-                <i class="fas fa-certificate"></i> Certificación de HP ATA-Networks <br>
-                <i class="fas fa-certificate"></i> Certificación de HP-ATA Conncted Devices <br>
-                <i class="fas fa-certificate"></i> Certificación de HP-ATA Serves & Storage <br>   
-              </ul>
-            <p class="font-italic my-3">Barranquilla, Colombia. 2018</p>
-              <hr class="my-4">
-              <h1 class="lead"><b>Técnico en electrónica, <a class="text-danger" href="http://www.itsa.edu.co/">ITSA</a> </b></h1>
-              <ul>
-                
-                <i class="fas fa-certificate"></i> Diploma de Técnico electrónica <br>
-                <i class="fas fa-certificate"></i> Certificación de CISCO  Networks <br>
-                <i class="fas fa-certificate"></i> Certificación de CISCO PC Hardware and software <br>
-              </ul>
-              <p class="font-italic my-3">Barranquilla, Colombia. 2012</p>
-
-          </div>
-          <div class="jumbotron bg-light p-4" id="servicios">
-            
-            <h1 class="display-6"><i class="fas fa-toolbox"></i> Servicios </h1>
-            
-            <hr class="my-4">
-            <div class="row">
-              <div class="col-sm-4">
-
-                  <img src="https://media.giphy.com/media/xT0Gqn9yuw8hnPGn5K/giphy.gif"
-                  class="img-thumbnail" alt="Desarrollo Web" style="max-height:200px;">
-              </div>
-              <div class="col-sm-8">
-
-                <h1 class="lead"><b>Desarrollo Web, Full Stack </b></h1>
-                  <ul>
-                    <li> Diseño y desarrollo de páginas y/o Aplicaciones Web </li>
-                    <li> Mantenimiento de páginas y/o Aplicaciones Web</li>
-                    <li> Montaje y administración páginas y/o Aplicaciones Web en hosting</li>
-                  </ul>
-              </div>
-            </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-sm-4">
-
-                        <img src="https://media.giphy.com/media/3Au0vqnGKBgiI/giphy.gif"
-                        class="img-thumbnail" alt="Diseño Electrónico" style="max-height:200px;">
-                </div>
-                <div class="col-sm-8">
-
-                  <h1 class="lead"><b>Diseño Electrónico </b></h1>
-                  <ul>
-                    <li> Diseño de circuitos electrónicos </li>
-                    <li> Montaje de componentes electrónicos </li>
-                    <li> Prueba y Mantenimiento de dispositivos electrónicos basicos</li>
-                  </ul>
-                </div>
-            </div>
-                <hr class="my-4">
-            <div class="row">
-                <div class="col-sm-4">
-
-                  <img src="https://media.giphy.com/media/xT0GqgaYgyVm1h0BPy/giphy.gif"
-                  class="img-thumbnail" alt="Diseño Electrónico" style="max-height:200px;">
-                </div>
-                <div class="col-sm-8">
-                <h1 class="lead"><b>Proyectos de emprendimiento </b></h1>
-                <ul>
-                  <li> Liderar el desarrollo e implementación de productos enfocados a la tecnología </li>
-                  <li> Liderar las actualizaciones y las mejoras del producto</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="jumbotron bg-light p-4" id="skills">
-            <h1 class="display-6"><i class="fas fa-chalkboard"></i> Skills </h1>
-            <hr class="my-5">
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                  
-                  <i class="fab fa-html5 fa-5x"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-css3-alt fa-5x"></i>
-                </li>
-                <li class="list-inline-item">
-                    <i class="fab fa-bootstrap"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-js-square fa-5x"></i>
-                </li>                
-                <li class="list-inline-item">
-                  <i class="fab fa-laravel fa-5x"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-wordpress fa-5x"></i>
-                </li>
-              </ul>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <i class="fab fa-python fa-5x"></i>
-                </li>
-                <li class="list-inline-item">
-                      <img class="mb-5" src="assets/img/raspberrypi.png"
-                      style="width:80px;height:80px;" alt="">
-                </li>
-                <li class="list-inline-item">
-                    <img class="mb-5" src="assets/img/arduino-2.png"
-                    style="width:80px;height:80px;" alt="">
-              </li>
-                
-            </ul>
-          </div>
-          <div class="jumbotron bg-light p-4" id="contacto">
-              <h1 class="display-6"><i class="fas fa-chalkboard"></i> Contacto </h1>
-              <hr class="my-4">
-              <a type="button" class="btn btn-info m-3" href="https://www.linkedin.com/in/rainer-romero-01b089117"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a type="button" class="btn btn-dark rounded-circle m-3" href="https://github.com/rainerr19/"><i class="fab fa-github fa-2x"></i></a>
-                <a type="button" class="btn btn-danger m-3" href="https://www.instagram.com/rainerr19/"><i class="fab fa-instagram fa-2x"></i></a>
-                <a type="button" class="btn btn-primary rounded-circle m-3" href="https://twitter.com/rainerr019"><i class="fab fa-twitter fa-2x"></i></a>
-                <a type="button" class="btn btn-light m-3" href="mailto:rainerr@uninorte.edu.co"><i class="fas fa-envelope fa-2x"></i></a>
-                <a type="button" class="btn btn-light m-3" href="tel:+573015371041"><i class="fas fa-mobile-alt fa-2x"></i></a>
-                <a type="button" class="btn btn-primary rounded-circle  m-3" href="skype:rainer.romero?call"><i class="fab fa-skype fa-2x"></i></a>
-                
-                
-                
-                
-            </div>
-          <hr>
-              
-                
-              
-         
-  
-        </div>
-      </div>
-
-    </div>
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script> -->
+                </ul>
+            </div>
+        <!--/col-->
+        <!-- contenido de paginas  -->
+        <div class="col main pt-5 mt-3">
+                <div class="col-12 col-md-8 col-xl-9 py-md-3" >              
+                    <div class="jumbotron bg-light p-5 mt-4" id="intro">
+                        <h1 class="display-6">  Soy<span class="text-danger"> RAINER ROMERO</span> , Ingeniero electrónico.</h1>
+                        <h5 class="font-italic my-4">Barranquilla – Colombia. +57 (301)537-1041. <a class="text-danger" href="mailto:rainerr@uninorte.edu.co">rainerr@uninorte.edu.co</a>  </h5>
+                        <hr class="my-5">
+                        <p class="lead">
+                            Ingeniero Electrónico, con formación en programación, diseño e implementación de sistemas electrónicos,
+                            con  habilidades para realizar proyectos enfocados a la ingeniería electrónica en general. 
+                            Ampliamente entrenamiento en lenguajes de programación de bajo y alto nivel. Con conocimientos en desarrollo y diseño web. 
+                            Alta experiencia en el desarrollo solución de problemas, con facilidad de trabajar en equipo, con sentido de creatividad e ingenio, 
+                            con foque al logro. Soy una persona responsable, amable, alegre, colaboradora y con muchos deseos de aprender.</p>
+                        
+                        </p>
+                        <hr class="my-4">
+                           
+                    </div>
+                    <div class="jumbotron bg-light p-4" id="estudios">
+                        <h1 class="display-6"><i class="fas fa-graduation-cap"></i> Estudios </h1>
+                        <hr class="my-4">
+                        
+                        <h1 class="lead"><b>Ingeniería Electrónica, <a class="text-danger" href="https://www.uninorte.edu.co/">Universidad del Norte</a> </b></h1>
+                        <ul>
+                            <i class="fas fa-certificate"></i>	Título profesional en Ingeniería Electrónica <br>
+                            <i class="fas fa-certificate"></i> Certificación de HP ATA-Networks <br>
+                            <i class="fas fa-certificate"></i> Certificación de HP-ATA Conncted Devices <br>
+                            <i class="fas fa-certificate"></i> Certificación de HP-ATA Serves & Storage <br>   
+                        </ul>
+                        <p class="font-italic my-3">Barranquilla, Colombia. 2018</p>
+                        <hr class="my-4">
+                        <h1 class="lead"><b>Técnico en electrónica, <a class="text-danger" href="http://www.itsa.edu.co/">ITSA</a> </b></h1>
+                        <ul>
+                            
+                            <i class="fas fa-certificate"></i> Diploma de Técnico electrónica <br>
+                            <i class="fas fa-certificate"></i> Certificación de CISCO  Networks <br>
+                            <i class="fas fa-certificate"></i> Certificación de CISCO PC Hardware and software <br>
+                        </ul>
+                        <p class="font-italic my-3">Barranquilla, Colombia. 2012</p>
+            
+                    </div>
+                    <div class="jumbotron bg-light p-4" id="servicios">
+                        
+                        <h1 class="display-6"><i class="fas fa-toolbox"></i> Servicios </h1>
+                        
+                        <hr class="my-4">
+                        <div class="row">
+                        <div class="col-sm-4">
+            
+                            <img src="https://media.giphy.com/media/xT0Gqn9yuw8hnPGn5K/giphy.gif"
+                            class="img-thumbnail" alt="Desarrollo Web" style="max-height:200px;">
+                        </div>
+                        <div class="col-sm-8">
+            
+                            <h1 class="lead"><b>Desarrollo Web, Full Stack </b></h1>
+                            <ul>
+                                <li> Diseño y desarrollo de páginas y/o Aplicaciones Web </li>
+                                <li> Mantenimiento de páginas y/o Aplicaciones Web</li>
+                                <li> Montaje y administración páginas y/o Aplicaciones Web en hosting</li>
+                            </ul>
+                        </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="row">
+                            <div class="col-sm-4">
+            
+                                    <img src="https://media.giphy.com/media/3Au0vqnGKBgiI/giphy.gif"
+                                    class="img-thumbnail" alt="Diseño Electrónico" style="max-height:200px;">
+                            </div>
+                            <div class="col-sm-8">
+            
+                            <h1 class="lead"><b>Diseño Electrónico </b></h1>
+                            <ul>
+                                <li> Diseño de circuitos electrónicos </li>
+                                <li> Montaje de componentes electrónicos </li>
+                                <li> Prueba y Mantenimiento de dispositivos electrónicos basicos</li>
+                            </ul>
+                            </div>
+                        </div>
+                            <hr class="my-4">
+                        <div class="row">
+                            <div class="col-sm-4">
+            
+                            <img src="https://media.giphy.com/media/xT0GqgaYgyVm1h0BPy/giphy.gif"
+                            class="img-thumbnail" alt="Diseño Electrónico" style="max-height:200px;">
+                            </div>
+                            <div class="col-sm-8">
+                            <h1 class="lead"><b>Proyectos de emprendimiento </b></h1>
+                            <ul>
+                            <li> Liderar el desarrollo e implementación de productos enfocados a la tecnología </li>
+                            <li> Liderar las actualizaciones y las mejoras del producto</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-light p-4" id="skills">
+                        <h1 class="display-6"><i class="fas fa-chalkboard"></i> Skills </h1>
+                        <hr class="my-5">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                            
+                              <i class="fab fa-html5 fa-5x" alt="HTML5" title="HTML5"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fab fa-css3-alt fa-5x" alt="CSS3" title="CSS3"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fab fa-js-square fa-5x"alt="JavaScript" title="JavaScript"></i>
+                            </li>                
+                            <li class="list-inline-item">
+                                <i class="fab fa-bootstrap" alt="Bootstrap 4" title="Bootstrap 4"></i>
+                            </li>
+                            
+                          </ul> 
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <i class="fab fa-laravel fa-5x" alt="Laravel" title="Laravel"></i>
+                            </li>
+                            <li class="list-inline-item">
+                              <i class="fab fa-wordpress fa-5x" alt="Wordpress" title="Wordpress"></i>
+                            </li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                            <i class="fab fa-python fa-5x" alt="Python" title="Python"></i>
+                            </li>
+                            <li class="list-inline-item">
+                                <img class="mb-5" src="assets/img/raspberrypi.png"
+                                style="width:80px;height:80px;" alt="Raspberry Pi" title="Raspberry Pi">
+                            </li>
+                            <li class="list-inline-item">
+                                <img class="mb-5" src="assets/img/arduino-2.png"
+                                style="width:80px;height:80px;" alt="Arduino" title="Arduino">
+                        </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="jumbotron bg-light p-4" id="contacto">
+                        <h1 class="display-6"><i class="fas fa-chalkboard"></i> Contacto </h1>
+                        <hr class="my-4">
+                        <h1 class="lead"><b>Contactamé por los siguentes medios: </b></h1>
+                        <ul class="list-inline">
+                            <a type="button" class="btn btn-info m-3" alt="Linkedin" title="Linkedin"
+                              href="https://www.linkedin.com/in/rainer-romero-01b089117">
+                              <i class="fab fa-linkedin fa-2x"></i></a>
+                            <a type="button" class="btn btn-dark rounded-circle m-3" alt="Github" title="Github"
+                              href="https://github.com/rainerr19/">
+                            <i class="fab fa-github fa-2x"></i></a>
+                            <a type="button" class="btn btn-danger m-3" alt="Instagram" title="Instagram"
+                            href="https://www.instagram.com/rainerr19/">
+                            <i class="fab fa-instagram fa-2x"></i></a>
+                            <a type="button" class="btn btn-primary rounded-circle m-3" alt="Twitter" title="Twitter"
+                            href="https://twitter.com/rainerr019">
+                            <i class="fab fa-twitter fa-2x"></i></a>
+                            
+                        </ul>
+                        <ul class="list-inline">
+                            <a type="button" class="btn btn-light m-3" alt="mail" title="mail"
+                              href="mailto:rainerr@uninorte.edu.co">
+                              <i class="fas fa-envelope fa-2x"></i></a>
+                            <a type="button" class="btn btn-light m-3" alt="Telefono Celular" title="Telefono Celular"
+                              href="tel:+573015371041">
+                              <i class="fas fa-mobile-alt fa-2x"></i></a>
+                            <a type="button" class="btn btn-primary rounded-circle  m-3" alt="Skype" title="Skype"
+                            href="skype:rainer.romero?call"> 
+                              <i class="fab fa-skype fa-2x"></i></a>
+                        </ul>
+                        <hr class="my-4">
+                        <h1 class="lead"><b>Descarga la hoja de vida: </b></h1>     
+                            <a type="button" class="btn btn-light m-3" alt="hoja de vida" title="hoja de vida"
+                             href="https://drive.google.com/file/d/1t289Vsg2K823i685C1nDoVg7KKMr5dCt/view?usp=sharing"><i class="fas fa-download fa-2x"></i></a>
+                                                       
+                 
+                        <hr class="my-4">
+                        <h1 class="lead"><b>Descarga la hoja de vida usando QR: </b></h1>     
+                       
+                          <img src="assets/img/qr_CV_drive.png" 
+                          alt="Códigos QR de hoja de vida en drive" title="Códigos QR de hoja de vida en drive"/>
+                      </div>
+                            
+                    <hr>
+                
+                </div>
+        </div>
+            
+                
+        </div>
+        <!--/main col-->
+    
+    </div>
+     <!-- container-->
+       
+
+
+
     <!-- Optional JavaScript -->
- <script src="js/vueApp.js"></script>
- <script>
- 
- $('#priceInput').collapse('show');
- </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script>
+        $(document).ready(function() {
+        
+        $('[data-toggle=offcanvas]').click(function() {
+        $('.row-offcanvas').toggleClass('active');
+        });
+        
+    });
    
+    </script>
   </body>
 </html>
